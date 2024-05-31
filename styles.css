@@ -1,0 +1,92 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Lightpink: hsl(275, 100%, 97%);
+--Grayishpurple: hsl(292, 16%, 49%);
+--Darkpurple: hsl(292, 42%, 14%); 
+
+background-color: var(--Lightpink);
+font-family: "Work Sans";
+font-weight: 400;
+font-size: 14px;
+color: var(--Darkpurple);
+background-image: url("assets/images/background-pattern-desktop.svg");
+background-size: 1440px;
+background-repeat: no-repeat;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: var(--White);
+    margin: 100px auto;
+    max-width: 450px;
+    border-radius: 20px;
+    z-index: 4;
+    position: relative;
+    padding: 0 40px;
+}
+
+
+
+.plus{
+    max-width: 40px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 44px;
+    margin-left: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+h3:hover{
+    color: var(--Grayishpurple)
+}
+
+hr{
+    color: --Grayishpurple;
+    width: 460px;
+    max-width: 100%;
+}
+
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-text, .minus{
+    display: none;
+}
+
+.hidden {
+    display: none;
+  }
+  
+  .scrolling-icon2 {
+    display: block;
+  }
+
+  @media only screen and (max-width: 600px){
+    :root{
+    background-image: url("assets/images/background-pattern-mobile.svg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    }
+    /* hr{
+        max-width: 100%;
+    } */
+  }
+  
